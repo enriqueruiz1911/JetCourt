@@ -1,0 +1,34 @@
+fonction SupprimerElements(tab : in_out tableau_de entier, pos : in entier_naturel) : renvoie entier;
+debut
+    declarer u : entier <- tab(pos);
+    pour (i variant_de pos a taille(tab-2)) 
+    faire
+        tab[i]<- tab[i+1];
+    ffaire
+    redimensionner(tab,taille(tab)-1);
+fin
+procedure InsertionElements(tab : in_out tableau_de entier, pos : in entier_naturel,val : in entier); 
+debut
+    allonger (tab,1);
+    pour (i variant_de pos a taille(tab)-2 descendant) 
+    faire
+        tab[i]<- tab[i-1];
+    ffairevoid InsertionElements(std::vector <int> & tab ,int pos,int val)
+{
+    int u;
+    int i = 0;
+    for(i = pos,u = tab[pos];(i =(tab.size() - 2) );i++)
+    {
+        tab[i] = tab[i+1];
+    }
+    tab[pos] = val;
+}
+    tab[pos]<-val;
+fin
+procedure deplacerElements(tab : in_out tableau_de entier , dep : in entier_naturel, arr : entier_naturel)
+debut
+    declarer val : entier_naturel;
+    val<-tab[dep];
+    SupprimerElements(tab,dep);
+    InsertionElements(tab,arr,val);
+fin
