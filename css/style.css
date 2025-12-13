@@ -1,10 +1,26 @@
-body{
-    background-color: #d9d9d9;
+body {
+    background-color: #ac9999;
 }
-head{
+
+head {
     color: beige;
 }
-section{
-    color : black;
+
+section {
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    display: flex;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
 }
