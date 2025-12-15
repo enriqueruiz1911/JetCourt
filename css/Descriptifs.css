@@ -37,13 +37,13 @@ main {
     align-items: center;
 }
 
-.Informations-produit {
+.informations-produit {
     padding-left: 60px;
     padding-right: 40px;
     max-width: 600px;
 }
 
-.Nom-Produit {
+.nom-produit {
     font-size: 3rem;
 }
 
@@ -53,21 +53,21 @@ main {
     color: #333;
 }
 
-.Description {
+.description {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
     text-align: justify;
 }
 
-.Produit-Image {
+.produit-image {
     width: 100%;
     height: 100%;
     display: end;
     overflow: hidden;
 }
 
-.Produit-Image img {
+.produit-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -109,13 +109,13 @@ a {
     text-decoration: none;
     color: black;
 }
-.Bouton-Achat {
+.bouton-achat {
     background-color: #000;
     color: #fff;
     font-weight: 600;
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
-.Bouton-Achat:hover {
+.bouton-achat:hover {
     background-color: #ff0000;
 }
