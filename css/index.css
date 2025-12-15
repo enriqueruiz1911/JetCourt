@@ -1,102 +1,103 @@
-   /* --- RESET --- */
-   body,
-   figure,
-   h1,
-   h3,
-   p {
-       margin: 0;
-       padding: 0;
-   }
+body {
+    padding: 40px;
+    
+}
+header {
+    margin-bottom: 50px;
+}
+/* --- Texte "Jetcourt" (Logo) --- */
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+}
+/* --- Texte "Catalogue" --- */
+header h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 200px;
+}
 
-   body {
-       padding: 40px;
+/* --- Grille chaussure--- */
+.Catalogue {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* --- Texte hyperlien dans le Catalogue --- */
+.Catalogue a {
+    text-decoration: none;
+    color: black;
+}
+section{
        color: #1a1a1a;
-   }
-   header {
-       margin-bottom: 50px;
-   }
-   /* --- Texte "Jetcourt" (Logo) --- */
-   header h1 {
-       font-family: 'Playfair Display', serif;
-       font-size: 3rem;
-   }
-   /* --- Texte "Catalogue" --- */
-   header h2 {
-       font-family: 'Playfair Display', sans-serif;
-       font-size: 1.5rem;
-       margin-left: 200px;
-   }
-
-   /* --- Grille chaussure--- */
-   .catalogue {
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-       gap: 30px;
-       max-width: 1400px;
-       margin: 0 auto;
-   }
-   /* --- Texte hyperlien dans le Catalogue --- */
-   .catalogue a {
        text-decoration: none;
-       color: black;
-   }
+}
+/* --- Bloc Produits --- */
+.Produit{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
 
-   /* --- Bloc Produits --- */
-   .product-card {
-       cursor: pointer;
-       display: flex;
-       flex-direction: column;
-   }
+/* --- Bloc Images  --- */
+.Produit-Visuel {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
 
-   /* --- Bloc Images  --- */
-   .product-visual {
-       width: 100%;
-       aspect-ratio: 1 / 1;
-       background-color: #f6f6f6;
-       border-radius: 12px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-bottom: 15px;
-       overflow: hidden;
-   }
+.Produit-Visuel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*fait en sorte que l'image s'adapte*/
+    padding: 10px;
+    transition: transform 0.3s ease;
+    /* Animation au survol */
+}
 
-   .product-visual img {
-       width: 100%;
-       height: 100%;
-       object-fit: contain; /*fait en sorte que l'image s'adapte*/
-       padding: 10px;
-       transition: transform 0.3s ease;
-       /* Animation au survol */
-   }
+/* Effet au Survol*/
+.Produit:hover .Produit-Visuel img {
+    transform: scale(1.05);
+}
 
-   /* Effet au Survol*/
-   .product-card:hover .product-visual img {
-       transform: scale(1.05);
-   }
+/* --- Nom du produit --- */
+.Nom-Produit{
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+/* --- Prix du Produit ---*/
+.Prix-Produit {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.Infos-Produit{
+    transition: 
+        color 0.8s,
+        font-size 0.8s;
+    justify-items: center;
+}
+.Infos-Produit:hover {
+    color :red;
+    font-size: 2rem;
+}
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .Catalogue {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-   /* --- Nom du produit --- */
-   .product-title {
-       font-size: 0.95rem;
-       font-weight: 700;
-       margin-bottom: 5px;
-   }
-   /* --- Prix du Produit ---*/
-   .product-price {
-       font-size: 0.9rem;
-       color: #555;
-       font-weight: 600;
-   }
-
-   /* --- Responsive --- */
-   @media (max-width: 1024px) {
-       .catalogue {
-           grid-template-columns: repeat(2, 1fr);
-       }
-   }
-
-   @media (max-width: 600px) {
-       .catalogue {
-           grid-template-columns: 1fr;
-       }
-   }
+@media (max-width: 600px) {
+    .catalogue {
+        grid-template-columns: 1fr;
+    }
+}
