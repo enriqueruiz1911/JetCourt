@@ -1,5 +1,4 @@
    /* --- RESET --- */
-   /* Important : <figure> et <body> ont des marges par défaut, on les enlève */
    body,
    figure,
    h1,
@@ -13,50 +12,46 @@
        padding: 40px;
        color: #1a1a1a;
    }
-
-   /* --- HEADER --- */
    header {
        margin-bottom: 50px;
    }
-
+   /* --- Texte "Jetcourt" (Logo) --- */
    header h1 {
        font-family: 'Playfair Display', serif;
        font-size: 3rem;
    }
-
+   /* --- Texte "Catalogue" --- */
    header h2 {
        font-family: 'Playfair Display', sans-serif;
        font-size: 1.5rem;
        margin-left: 200px;
    }
 
-   /* --- GRILLE PRINCIPALE (<section>) --- */
+   /* --- Grille chaussure--- */
    .catalogue {
        display: grid;
-       /* 4 colonnes égales */
        grid-template-columns: repeat(4, 1fr);
        gap: 30px;
        max-width: 1400px;
        margin: 0 auto;
    }
-
+   /* --- Texte hyperlien dans le Catalogue --- */
    .catalogue a {
        text-decoration: none;
        color: black;
    }
 
-   /* --- CARTE PRODUIT (<article>) --- */
+   /* --- Bloc Produits --- */
    .product-card {
        cursor: pointer;
        display: flex;
        flex-direction: column;
    }
 
-   /* --- BOÎTE IMAGE (<figure>) --- */
+   /* --- Bloc Images  --- */
    .product-visual {
        width: 100%;
        aspect-ratio: 1 / 1;
-       /* Le fameux carré */
        background-color: #f6f6f6;
        border-radius: 12px;
        display: flex;
@@ -69,32 +64,31 @@
    .product-visual img {
        width: 100%;
        height: 100%;
-       object-fit: contain;
-       /* L'image s'adapte */
+       object-fit: contain; /*fait en sorte que l'image s'adapte*/
        padding: 10px;
        transition: transform 0.3s ease;
-       /* Petite animation au survol */
+       /* Animation au survol */
    }
 
-   /* Effet de zoom au survol (optionnel mais sympa) */
+   /* Effet au Survol*/
    .product-card:hover .product-visual img {
        transform: scale(1.05);
    }
 
-   /* --- TEXTE --- */
+   /* --- Nom du produit --- */
    .product-title {
        font-size: 0.95rem;
        font-weight: 700;
        margin-bottom: 5px;
    }
-
+   /* --- Prix du Produit ---*/
    .product-price {
        font-size: 0.9rem;
        color: #555;
        font-weight: 600;
    }
 
-   /* --- RESPONSIVE --- */
+   /* --- Responsive --- */
    @media (max-width: 1024px) {
        .catalogue {
            grid-template-columns: repeat(2, 1fr);
