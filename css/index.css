@@ -1,23 +1,27 @@
 body {
     padding: 40px;
-    
-}
-header {
-    margin-bottom: 50px;
 }
 /* --- Texte "Jetcourt" (Logo) --- */
-header h1 {
+.titre-principal {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    text-decoration: none;
+    color: black;
 }
 /* --- Texte "Catalogue" --- */
-header h2 {
+.titre-secondaire {
     font-family: 'Inter', sans-serif;
+    justify-content: flex-end;
     font-size: 1.5rem;
     font-weight: 400;
     margin-left: 200px;
 }
-
+/* --- Texte "Actualité Sneakers" --- */
+.sous-titre {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 /* --- Grille chaussure--- */
 .catalogue {
     display: grid;
@@ -25,11 +29,6 @@ header h2 {
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
-}
-/* --- Texte hyperlien dans le Catalogue --- */
-.catalogue a {
-    text-decoration: none;
-    color: black;
 }
 section{
        color: #1a1a1a;
@@ -41,7 +40,10 @@ section{
     display: flex;
     flex-direction: column;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 /* --- Bloc Images  --- */
 .produit-visuel {
     width: 100%;
@@ -101,4 +103,19 @@ section{
     .catalogue {
         grid-template-columns: 1fr;
     }
+}
+.haut-page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+.haut-page img {
+    width: 40px;
+    height: 40px;
+}
+.haut-page:hover {
+    background-color: #ff0000;
 }
