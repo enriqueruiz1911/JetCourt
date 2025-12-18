@@ -82,12 +82,14 @@ a{
     font-size: 0.9rem;
     font-weight: 600;
 }
+/* --- Transition de l'effet au survol --- */
 .infos-produit{
     transition: 
         color 0.8s,
         font-size 0.8s;
     justify-items: center;
 }
+/* --- Effet au survol --- */
 .infos-produit:hover {
     color :red;
     font-size: 2rem;
@@ -104,6 +106,7 @@ a{
         grid-template-columns: 1fr;
     }
 }
+
 .haut-page {
     position: fixed;
     bottom: 20px;
@@ -118,4 +121,15 @@ a{
 }
 .haut-page:hover {
     background-color: #ff0000;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+    
+}
+.logo-amu img{
+    width:60px
+}
+li{
+    list-style-type: none;
 }
