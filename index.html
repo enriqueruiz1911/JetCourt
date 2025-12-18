@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Catalogue de sneakers ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        JETCOURT - Catalogue
-    </title>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Catalogue de sneakers " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JETCOURT - Catalogue</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link data-theme="light" rel="stylesheet" href="/css/light.css" />
+    <link data-theme="dark" rel="stylesheet" href="/css/dark.css" /> -->
+    <script src="/js/script.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1 class="titre-principal">
-            JETCOURT
-        </h1>
-        <h2 class="titre-secondaire">
-            Catalogue
-        </h2>
-        <a class="sous-titre" href="/Actualites.html">
-            Actualité Sneakers
-        </a>
-
+      <div>
+        <div>
+          <h1 class="titre-principal">JETCOURT</h1>
+          <h2 class="titre-secondaire">Catalogue</h2>
+        </div>
+        <nav>
+          <a class="sous-titre" href="/Actualites.html">Actualité Sneakers</a>
+        </nav>
+        <button onclick="cycleTheme()">Theme</button>
+      </div>
     </header>
 
-    <section class="catalogue">
-
+    <main>
+      <section class="catalogue">
         <a class="produit" href="/Descriptif/Jordan4_Military_Black.html">
             <ul class="infos-produit">
                 <li class="produit-visuel">
