@@ -12,30 +12,29 @@
 
   <body>
     <header>
-      <div>
+      <div class="container">
         <div>
-          <a class="main-title" href="index.html">
-            JETCOURT
-          </a>
+          <h1 class="main-title">JETCOURT</h1>
         </div>
-        
-        <ul>
+        <ul class="menu">
           <li>
-            <a class="subtitles" href="News.html">
-              Actualité Sneakers
-            </a>
+            <a class="subtitles" href="News.html">Actualité Sneakers</a>
           </li>
           <li>
             <a class="subtitles" href="contact.html">Contact</a>
           </li>
         </ul>
-        <button onclick="cycleTheme()">Theme</button>
+        <button class="button-theme" onclick="cycleTheme()"></button>
+        <button class="button-burger" onclick="openMenu()"></button>
       </div>
     </header>
 
     <main>
-
-      <form class="form-contact" action="https://formspree.io/f/mgoweywq" method="POST">
+      <form
+        class="form-contact"
+        action="https://formspree.io/f/mgoweywq"
+        method="POST"
+      >
         <ul>
           <li>
             <label for="formulaire_email">Adresse mail :</label>
