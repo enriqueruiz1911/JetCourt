@@ -1,174 +1,181 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Catalogue de sneakers ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        JETCOURT - Catalogue
-    </title>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Catalogue de sneakers " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JETCOURT - Catalogue</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link data-theme="light" rel="stylesheet" href="/css/light.css" />
+    <link data-theme="dark" rel="stylesheet" href="/css/dark.css" /> -->
+    <script src="/js/script.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1 class="titre-principal">
-            JETCOURT
-        </h1>
-        <h2 class="titre-secondaire">
-            Catalogue
-        </h2>
-        <a class="sous-titre" href="/Actualites.html">
-            Actualité Sneakers
-        </a>
-
+      <div>
+        <div>
+          <h1 class="titre-principal">JETCOURT</h1>
+          <h2 class="titre-secondaire">Catalogue</h2>
+        </div>
+        <nav>
+          <a class="sous-titre" href="/Actualites.html">Actualité Sneakers</a>
+        </nav>
+        <button onclick="cycleTheme()">Theme</button>
+      </div>
     </header>
 
-    <section class="catalogue">
-
+    <main>
+      <section class="catalogue">
         <a class="produit" href="/Descriptif/Jordan4_Military_Black.html">
-            <ul class="infos-produit">
-                <figure class="produit-visuel">
-                    <img src="/Images/Jordan_4_Military_Black.png" alt="Jordan 4 Military Black">
-                </figure>
-                <span class="infos">
-                    <h3 class="nom-produit">
-                        Jordan 4 Retro Military Black
-                    </h3>
-                    <p class="prix-produit">
-                        600 €
-                    </p>
-                </span>
-            </ul>
+          <ul class="infos-produit">
+            <figure class="produit-visuel">
+              <img
+                src="/Images/Jordan_4_Military_Black.png"
+                alt="Jordan 4 Military Black"
+              />
+            </figure>
+            <span class="infos">
+              <h3 class="nom-produit">Jordan 4 Retro Military Black</h3>
+              <p class="prix-produit">600 €</p>
+            </span>
+          </ul>
         </a>
 
         <a class="produit" href="/Descriptif/Jordan4_Thunder.html">
-            <ul class="infos-produit">
+          <ul class="infos-produit">
             <figure class="produit-visuel">
-                <img src="/Images/Jordan_4_Thunder.png" alt="Jordan 4 Thunder">
+              <img src="/Images/Jordan_4_Thunder.png" alt="Jordan 4 Thunder" />
             </figure>
             <span class="infos">
-            <h3 class="nom-produit">Jordan 4 Thunder</h3>
-            <p class="prix-produit">210 €</p>
+              <h3 class="nom-produit">Jordan 4 Thunder</h3>
+              <p class="prix-produit">210 €</p>
             </span>
-        </ul>
+          </ul>
         </a>
 
         <a class="produit" href="/Descriptif/Jordan4_Black_Cat.html">
-            <ul class="infos-produit">
-                <figure class="produit-visuel">
-                    <img src="/Images/Jordan_4_Black_Cat.png" alt="Jordan 4 Black Cat">
-                </figure>
-                <span class="infos">
-                    <h3 class="nom-produit">
-                        Jordan 4 Black Cat
-                    </h3>
-                    <p class="prix-produit">
-                        210 €
-                    </p>
-                </span>
-            </ul>
+          <ul class="infos-produit">
+            <figure class="produit-visuel">
+              <img
+                src="/Images/Jordan_4_Black_Cat.png"
+                alt="Jordan 4 Black Cat"
+              />
+            </figure>
+            <span class="infos">
+              <h3 class="nom-produit">Jordan 4 Black Cat</h3>
+              <p class="prix-produit">210 €</p>
+            </span>
+          </ul>
         </a>
 
         <a class="produit" href="/Descriptif/Jordan_1_Low_Og_Laser.html">
-            <ul class="infos-produit">
-                <figure class="produit-visuel">
-                    <img src="/Images/Jordan_1_Low_Og_Laser.png" alt="Jordan 1 Low OG Laser">
-                </figure>
-                <span class="infos">
-                    <h3 class="nom-produit">Jordan 1 Low OG Laser</h3>
-                    <p class="prix-produit">
-                        150 €
-                    </p>
-                </span>
-            </ul>
+          <ul class="infos-produit">
+            <figure class="produit-visuel">
+              <img
+                src="/Images/Jordan_1_Low_Og_Laser.png"
+                alt="Jordan 1 Low OG Laser"
+              />
+            </figure>
+            <span class="infos">
+              <h3 class="nom-produit">Jordan 1 Low OG Laser</h3>
+              <p class="prix-produit">150 €</p>
+            </span>
+          </ul>
         </a>
         <a class="produit" href="/Descriptif/Jordan_1_Bephies_Beauty.html">
-            <span class="infos-produit">
-                <figure class="produit-visuel">
-                    <img src="/Images/Jordan_1_Bephies_Beauty.png" alt="Jordan 1 Bephies Beauty">
-                </figure>
-                <ul class="infos">
-                    <h3 class="nom-produit">
-                        Jordan 1 Bephies Beauty
-                    </h3>
-                    <p class="prix-produit">
-                         170 €
-                    </p>
-                </ul> 
-            </span>
+          <span class="infos-produit">
+            <figure class="produit-visuel">
+              <img
+                src="/Images/Jordan_1_Bephies_Beauty.png"
+                alt="Jordan 1 Bephies Beauty"
+              />
+            </figure>
+            <ul class="infos">
+              <h3 class="nom-produit">Jordan 1 Bephies Beauty</h3>
+              <p class="prix-produit">170 €</p>
+            </ul>
+          </span>
         </a>
         <a class="produit" href="/Descriptif/Jordan_1_High_X_Dior.html">
-            <span class="infos-produit">
+          <span class="infos-produit">
             <figure class="produit-visuel">
-                <img src="/Images/Jordan_1_High_X_Dior.png" alt="Jordan 1 High x Dior">
+              <img
+                src="/Images/Jordan_1_High_X_Dior.png"
+                alt="Jordan 1 High x Dior"
+              />
             </figure>
             <ul class="infos">
-            <h3 class="nom-produit">
-                Jordan 1 High x Dior
-            </h3>
-            <p class="prix-produit">
-                170 €
-            </p>
+              <h3 class="nom-produit">Jordan 1 High x Dior</h3>
+              <p class="prix-produit">170 €</p>
             </ul>
-            </span>
+          </span>
         </a>
         <a class="produit" href="/Descriptif/Jordan_1_High_X_Kaws.html">
-            <span class="infos-produit">
+          <span class="infos-produit">
             <figure class="produit-visuel">
-                <img src="/Images/Jordan_1_High_X_Kaws.png" alt="Jordan 1 High x Kaws">
+              <img
+                src="/Images/Jordan_1_High_X_Kaws.png"
+                alt="Jordan 1 High x Kaws"
+              />
             </figure>
             <ul class="infos">
-            <h3 class="nom-produit">
-                Jordan 1 High x Kaws
-            </h3>
-            <p class="prix-produit">
-                170 €
-            </p>
+              <h3 class="nom-produit">Jordan 1 High x Kaws</h3>
+              <p class="prix-produit">170 €</p>
             </ul>
-            </span>
+          </span>
         </a>
-        <a class="produit" href="/Descriptif/Jordan_5_Red_Fire_Black_Tongue.html">
-            <span class="infos-produit">
+        <a
+          class="produit"
+          href="/Descriptif/Jordan_5_Red_Fire_Black_Tongue.html"
+        >
+          <span class="infos-produit">
             <figure class="produit-visuel">
-                <img src="/Images/Jordan_5_Red_Fire_Black_Tongue.png" alt="Jordan 5 Red Fire Black Tongue">
+              <img
+                src="/Images/Jordan_5_Red_Fire_Black_Tongue.png"
+                alt="Jordan 5 Red Fire Black Tongue"
+              />
             </figure>
             <ul class="infos">
-            <h3 class="nom-produit">
-                Jordan 5 Red Fire Black Tongue
-            </h3>
-            <p class="prix-produit">
-                170 €
-            </p>
+              <h3 class="nom-produit">Jordan 5 Red Fire Black Tongue</h3>
+              <p class="prix-produit">170 €</p>
             </ul>
-            </span>
+          </span>
         </a>
-        <a class="produit" href="/Descriptif/Jordan_1_High_X_Nigel_Sylvester.html">
-            <span class="infos-produit">
+        <a
+          class="produit"
+          href="/Descriptif/Jordan_1_High_X_Nigel_Sylvester.html"
+        >
+          <span class="infos-produit">
             <figure class="produit-visuel">
-                <img src="/Images/Jordan_1_High_X_Nigel_Sylvester.png" alt="Jordan 1 High x Nigel Sylvester">
+              <img
+                src="/Images/Jordan_1_High_X_Nigel_Sylvester.png"
+                alt="Jordan 1 High x Nigel Sylvester"
+              />
             </figure>
             <ul class="infos">
-            <h3 class="nom-produit">
-                Jordan 1 High x Nigel Sylvester
-            </h3>
-            <p class="prix-produit">
-                170 €
-            </p>
+              <h3 class="nom-produit">Jordan 1 High x Nigel Sylvester</h3>
+              <p class="prix-produit">170 €</p>
             </ul>
-            </span>
-    </section>
-<a class="haut-page" href="#">
-    <img src="Images/fleche_haut.png" alt="Flèche haut">
-</a>
-<a class="IUT" href="">
-    <img src="Images/IUT_logo.png" alt="Logo IUT Aix-Marseille">
-</a>
-</body>
-
+          </span>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <a class="haut-page" href="#">
+        <img src="Images/fleche_haut.png" alt="Flèche haut" />
+      </a>
+      <a class="IUT" href="">
+        <img
+          src="Images/IUT_logo.png"
+          width="250"
+          alt="Logo de Aix-Marseille Université"
+        />
+      </a>
+    </footer>
+  </body>
 </html>
