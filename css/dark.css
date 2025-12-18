@@ -1,9 +1,10 @@
 html[data-theme="dark"] {
   --color-bg: #24262b;
+  --color-bg2: #3f434d;
   --color-fg: #ffffff;
 }
 
-html[data-theme="dark"] .bouton-theme {
+html[data-theme="dark"] .button-theme {
   background-color: #dbd9d4;
   background-image: url("../img/lune.avif");
   border: 2px solid #000;
