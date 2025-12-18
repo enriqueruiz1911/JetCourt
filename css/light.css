@@ -1,10 +1,11 @@
 html:not([data-theme]),
 html[data-theme="light"] {
   --color-bg: #ffffff;
+  --color-bg2: #dcdee3;
   --color-fg: #24262b;
 }
 
-html[data-theme="light"] .bouton-theme {
+html[data-theme="light"] .button-theme {
   background-image: url("../img/soleil.avif");
   filter: contrast(75%) brightness(150%);
   border: 2px solid #000;

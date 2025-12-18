@@ -17,7 +17,13 @@ window.cycleTheme = () => {
   loadTheme(index);
 };
 
-window.openMenu = () => {};
+window.openMenu = () => {
+  document.getElementById("menu").style.display = "initial";
+};
+
+window.closeMenu = () => {
+  document.getElementById("menu").style.display = "none";
+};
 
 addEventListener("load", () => {
   let theme = parseInt(localStorage.getItem("theme"));
