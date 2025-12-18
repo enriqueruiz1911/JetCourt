@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("light.css");
+@import url("dark.css");
+
+html {
+  box-sizing: border-box;
+}    flex-wrap: wrap;
+    display: flex;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(71, 27, 27);
+}
+
+header {
+  display: sticky;
+  padding: 0 2rem;
+  box-shadow: 0 0 2px var(--color-fg);
+}
+
+header > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: 2px solid var(--color-fg);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+
+/* Formulaire de contact */
+.form-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-contact > ul {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 0.5rem;
+}
+
+.form-contact > ul li {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form-contact > ul,
+.form-contact > ul li {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.form-contact > ul li > label {
+  flex: 0;
+  min-width: 8em;
+}
+
+.form-contact > ul > li > input {
+  flex: 1;
+}
+
+.form-contact > ul textarea {
+  width: 100%;
+}
+
+/* --- Texte "Jetcourt" (Logo) --- */
+.titre-principal {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* --- Texte "Catalogue" --- */
+.titre-secondaire {
+  display: inline-block;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-left: 8em;
+}
+/* --- Texte "Actualité Sneakers" --- */
+.sous-titre {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* --- Grille chaussure--- */
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+section {
+  text-decoration: none;
+}
+/* --- Bloc Produits --- */
+.produit {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* --- Bloc Images  --- */
+.produit-visuel {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: rgb(255, 140, 140);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.produit-visuel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /*fait en sorte que l'image s'adapte*/
+  padding: 10px;
+  transition: transform 0.3s ease;
+  /* Animation au survol */
+}
+
+/* Effet au Survol*/
+.produit:hover .produit-visuel img {
+  transform: scale(1.05);
+}
+
+/* --- Nom du produit --- */
+.nom-produit {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+/* --- Prix du Produit ---*/
+.prix-produit {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.infos-produit {
+  transition:
+    color 0.8s,
+    font-size 0.8s;
+  justify-items: center;
+}
+.infos-produit:hover {
+  color: rgb(255, 141, 141);
+  font-size: 2rem;
+}
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .catalogue {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogue {
+    grid-template-columns: 1fr;
+  }
+}
+
+.haut-page {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+.haut-page img {
+  width: 40px;
+  height: 40px;
+}
+.haut-page:hover {
+  background-color: #ff0000;
+}
+footer img {
+  height: 30px;
+  width: 30px;
+}
+.logo-amu img {
+  width: 60px;
+}
+li {
+  list-style-type: none;
+}
+.bouton-theme {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}

@@ -1,8 +1,8 @@
 /* Body */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #fff;
-    color: #1a1a1a;
+    background-color: rgb(71, 27, 27);
+    color: #ff2e2e;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,9 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #cb6d6d;
     border-radius: 8px;
-    color: #ccc;
+    color: #ff6767;
 }
 /* Main */
 main {
@@ -50,13 +50,13 @@ main {
 .prix {
     font-size: 2.5rem;
     display: block;
-    color: #333;
+    color:  #ffffff;
 }
 
 .description {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: #ffffff;
     text-align: justify;
 }
 
@@ -117,5 +117,5 @@ a {
     transition: background-color 0.3s ease;
 }
 .bouton-achat:hover {
-    background-color: #ff9f9f;
+    background-color: #ff9393;
 }
