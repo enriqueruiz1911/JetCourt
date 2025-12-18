@@ -230,13 +230,13 @@ a {
 .product-visual {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: #f6f6f6;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
   overflow: hidden;
+  background-color: var(--color-bg2);
 }
 
 .product-visual img {

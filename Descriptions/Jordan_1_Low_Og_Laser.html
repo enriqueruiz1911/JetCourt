@@ -14,24 +14,27 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/Descriptions.css" />
+    <script src="../js/script.js"></script>
   </head>
   <body>
     <header>
-      <a href="../index.html">
-        <h1 class="logo">JETCOURT</h1>
-      </a>
-      <ul class="menu">
+      <div class="container">
+        <div>
+          <a href="../index.html"><h1 class="main-title">JETCOURT</h1></a>
+        </div>
+        <ul class="menu">
           <li>
-            <a class="subtitles" href="../News.html">
-              Actualité Sneakers
-            </a>
+            <a class="subtitles" href="News.html">Actualité Sneakers</a>
           </li>
           <li>
-            <a class="subtitles" href="../contact.html">Contact</a>
+            <a class="subtitles" href="contact.html">Contact</a>
           </li>
         </ul>
-      <button class="icon-Burger">☰</button>
+        <button class="button-theme" onclick="cycleTheme()"></button>
+        <button class="button-burger" onclick="openMenu()"></button>
+      </div>
     </header>
+
     <main>
       <section class="product-info">
         <h2 class="product-name">Jordan 1 Low Og Laser</h2>
@@ -45,15 +48,13 @@
           Jordan 1 Low Og Laser est un choix incontournable pour les amateurs de
           sneakers et les passionnés de basketball.
         </h3>
-        <a
-          href=""
-          class="buy-button"
-        >
-          Pas encore disponible
-        </a>
+        <a href="" class="buy-button"> Pas encore disponible </a>
       </section>
       <section class="product-image">
-        <img src="../img/j1-low-og-laser.avif" alt="Air Jordan 1 Low OG Laser" />
+        <img
+          src="../img/j1-low-og-laser.avif"
+          alt="Air Jordan 1 Low OG Laser"
+        />
       </section>
     </main>
   </body>

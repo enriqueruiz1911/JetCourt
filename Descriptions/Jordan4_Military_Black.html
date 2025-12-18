@@ -11,34 +11,37 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/Descriptions.css" />
+    <script src="../js/script.js"></script>
   </head>
   <body>
     <header>
-      <a href="../index.html">
-        <h1 class="logo">JETCOURT</h1>
-      </a>
+      <div class="container">
+        <div>
+          <a href="../index.html"><h1 class="main-title">JETCOURT</h1></a>
+        </div>
         <ul class="menu">
           <li>
-            <a class="subtitles" href="../News.html">
-              Actualité Sneakers
-            </a>
+            <a class="subtitles" href="News.html">Actualité Sneakers</a>
           </li>
           <li>
-            <a class="subtitles" href="../contact.html">Contact</a>
+            <a class="subtitles" href="contact.html">Contact</a>
           </li>
         </ul>
-      <button class="icon-Burger">☰</button>
+        <button class="button-theme" onclick="cycleTheme()"></button>
+        <button class="button-burger" onclick="openMenu()"></button>
+      </div>
     </header>
+
     <main>
       <section class="product-info">
         <h2 class="product-name">Air Jordan 4 Retro Military Black</h2>
-          <p class="product-price">600 €</p>
-            <h3 class="product-description">
-              La base de la Jordan 4 par excellence : Cette sneaker est une
-              référence quasi-évidente dans sa catégorie dû à sa sobriété qui en
-              fait son charme. Elle est le point de départ de beaucoup de dérivés à
-              succès.
-            </h3>
+        <p class="product-price">600 €</p>
+        <h3 class="product-description">
+          La base de la Jordan 4 par excellence : Cette sneaker est une
+          référence quasi-évidente dans sa catégorie dû à sa sobriété qui en
+          fait son charme. Elle est le point de départ de beaucoup de dérivés à
+          succès.
+        </h3>
         <a
           href="https://wethenew.com/products/air-jordan-4-military-black"
           class="buy-button"
