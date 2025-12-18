@@ -4,13 +4,25 @@ const script = document.currentScript;
 
 const themes = ["light", "dark"];
 
-window.loadTheme = (name) => {
+window.loadTheme = (i) => {
   const html = document.documentElement;
+  const name = themes[i];
   html.setAttribute("data-theme", name);
+  localStorage.setItem("theme", i);
 };
 
 window.cycleTheme = () => {
   const name = document.documentElement.getAttribute("data-theme");
   const index = (1 + themes.indexOf(name)) % themes.length;
-  loadTheme(themes[index]);
+  loadTheme(index);
 };
+
+window.openMenu = () => {};
+
+addEventListener("load", () => {
+  let theme = parseInt(localStorage.getItem("theme"));
+  if (!theme) {
+    theme = 0;
+  }
+  loadTheme(theme);
+});

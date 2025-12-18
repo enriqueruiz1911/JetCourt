@@ -21,7 +21,7 @@
           <a class="sous-titre" href="Actualites.html">Actualité Sneakers</a>
         </nav>
         <button class="bouton-theme" onclick="cycleTheme()"></button>
-        <button class="bouton-burger"></button>
+        <button class="bouton-burger" onclick="openMenu()"></button>
       </div>
     </header>
 
@@ -69,10 +69,7 @@
         <a class="produit" href="Descriptif/Jordan_1_Low_Og_Laser.html">
           <ul class="infos-produit">
             <li class="produit-visuel">
-              <img
-                src="img/j1-low-og-laser.avif"
-                alt="Jordan 1 Low OG Laser"
-              />
+              <img src="img/j1-low-og-laser.avif" alt="Jordan 1 Low OG Laser" />
             </li>
             <li class="infos">
               <h3 class="nom-produit">Jordan 1 Low OG Laser</h3>
@@ -196,10 +193,19 @@
           </ul>
         </a>
       </section>
+      <a class="haut-page" href="#">
+        <img src="img/fleche-haut.avif" alt="Flèche haut" />
+      </a>
     </main>
-    <a class="haut-page" href="#">
-      <img src="img/fleche-haut.avif" alt="Flèche haut" />
-    </a>
+
+    <section id="menu" class="menu-burger">
+      <button class="bouton-burger"></button>
+      <ul>
+        <li><a href="index.html">Catalogue</a></li>
+        <li><a href="Actualites.html">Actualité Sneakers</a></li>
+      </ul>
+    </section>
+
     <footer>
       <ul>
         <li>

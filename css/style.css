@@ -74,6 +74,7 @@ input[type="submit"]:active {
 }
 
 .bouton-burger {
+  display: none; /* il sera active sur mobile */
   font-size: 14pt;
   text-align: center;
   width: 64px;
@@ -134,13 +135,14 @@ input[type="submit"]:active {
   text-decoration: none;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: -3px;
 }
 /* --- Texte "Catalogue" --- */
 .titre-secondaire {
   display: inline-block;
   justify-content: flex-end;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 250;
   margin-top: -10px;
   margin-left: 8em;
 }
@@ -221,6 +223,14 @@ a {
 }
 /* --- Responsive --- */
 @media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+
+  .bouton-burger {
+    display: block;
+  }
+
   .catalogue {
     grid-template-columns: repeat(2, 1fr);
   }
