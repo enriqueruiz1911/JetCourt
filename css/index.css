@@ -1,0 +1,135 @@
+body {
+    padding: 40px;
+}
+/* --- Texte "Jetcourt" (Logo) --- */
+.titre-principal {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+/* --- Texte "Catalogue" --- */
+.titre-secondaire {
+    font-family: 'Inter', sans-serif;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 200px;
+}
+/* --- Texte "Actualité Sneakers" --- */
+.sous-titre {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* --- Grille chaussure--- */
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+section{
+       color: #1a1a1a;
+       text-decoration: none;
+}
+/* --- Bloc Produits --- */
+.produit {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* --- Bloc Images  --- */
+.produit-visuel {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.produit-visuel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*fait en sorte que l'image s'adapte*/
+    padding: 10px;
+    transition: transform 0.3s ease;
+    /* Animation au survol */
+}
+
+/* Effet au Survol*/
+.produit:hover .produit-visuel img {
+    transform: scale(1.05);
+}
+
+/* --- Nom du produit --- */
+.nom-produit{
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+/* --- Prix du Produit ---*/
+.prix-produit {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/* --- Transition de l'effet au survol --- */
+.infos-produit{
+    transition: 
+        color 0.8s,
+        font-size 0.8s;
+    justify-items: center;
+}
+/* --- Effet au survol --- */
+.infos-produit:hover {
+    color :red;
+    font-size: 2rem;
+}
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .catalogue {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogue {
+        grid-template-columns: 1fr;
+    }
+}
+
+.haut-page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+.haut-page img {
+    width: 40px;
+    height: 40px;
+}
+.haut-page:hover {
+    background-color: #ff0000;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+    
+}
+.logo-amu img{
+    width:60px
+}
+li{
+    list-style-type: none;
+}
