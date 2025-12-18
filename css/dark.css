@@ -1,4 +1,11 @@
 html[data-theme="dark"] {
-  --color-bg: #16171a;
+  --color-bg: #24262b;
   --color-fg: #ffffff;
+}
+
+html[data-theme="dark"] .bouton-theme {
+  background-color: #dbd9d4;
+  background-image: url("../img/lune.avif");
+  border: 2px solid #000;
+  filter: invert(100%);
 }
