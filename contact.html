@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Page de contact" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - JETCOURT</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div>
+          <h1 class="titre-principal">JETCOURT</h1>
+          <h2 class="titre-secondaire">Catalogue</h2>
+        </div>
+        <nav>
+          <a class="sous-titre" href="/Actualites.html">Actualité Sneakers</a>
+        </nav>
+        <button onclick="cycleTheme()">Theme</button>
+      </div>
+    </header>
+
+    <main>
+      <form class="form-contact">
+        <ul>
+          <li>
+            <label for="formulaire_email">Adresse mail :</label>
+            <input type="email" id="formulaire_email" name="formulaire_email" />
+          </li>
+          <li>
+            <label for="formulaire_objet">Objet :</label>
+            <input type="text" id="formulaire_objet" name="fomulaire_objet" />
+          </li>
+          <li>
+            <textarea
+              id="formulaire_message"
+              name="formulaire_message"
+              rows="15"
+              cols="80"
+            ></textarea>
+          </li>
+        </ul>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </main>
+
+    <footer>
+      <a class="haut-page" href="#">
+        <img src="Images/fleche_haut.png" alt="Flèche haut" />
+      </a>
+      <a class="IUT" href="">
+        <img
+          src="Images/IUT_logo.png"
+          width="250"
+          alt="Logo de Aix-Marseille Université"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
