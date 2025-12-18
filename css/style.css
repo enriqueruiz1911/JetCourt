@@ -13,7 +13,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--color-bg);
@@ -144,7 +143,6 @@ input[type="submit"]:active {
 .subtitle {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
 }
 /* --- Grille chaussure--- */
 .catalog {
@@ -235,11 +233,15 @@ a {
     grid-template-columns: 1fr;
   }
 }
-
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 .anchor {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   background-color: #ffffff;
   border-radius: 50%;
   transition: background-color 0.5s ease;

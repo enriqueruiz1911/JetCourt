@@ -1,9 +1,9 @@
 
-.titre-secondaire img{
+.second-title img{
     height: 30px;
     width: 30px;
 }
-.boite-actualites{
+.news-box{
     background-color: rgb(71, 27, 27);
     border-radius: 12px;
     padding: 20px;
@@ -12,7 +12,7 @@
     gap: 1rem;
     justify-content: center;
 }
-.actualite{
+.news{
     background-color: rgb(255, 140, 140);
     border-radius: 8px;
     padding: 15px;
