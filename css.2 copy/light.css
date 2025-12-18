@@ -1,5 +1,0 @@
-html:not([data-theme]),
-html[data-theme="light"] {
-  --color-bg: #ffffff;
-  --color-fg: #16171a;
-}
