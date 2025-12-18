@@ -1,3 +1,5 @@
+"use strict";
+
 const script = document.currentScript;
 
 const themes = ["light", "dark"];

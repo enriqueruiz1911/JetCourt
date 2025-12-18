@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf dist",
-    "dist": "bun build $(git ls-files '*.html') --outdir dist --production"
+    "dist": "for f in $(git ls-files '*.html'); do bun build $f --outdir dist/$(dirname -- $f) --experimental-html --experimental-css --minify --production; done"
   },
   "devDependencies": {
     "@types/bun": "latest"
